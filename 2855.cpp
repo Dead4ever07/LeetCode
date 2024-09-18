@@ -13,10 +13,6 @@ bool deque_check_sorted(deque<int> v1)
 int minimumRightShifts(vector<int>& nums) {
         int counter = 0;
         deque<int> queue_nums;
-        for(int n : nums)
-        {
-            queue_nums.push_back(n);
-        }
 
         while(!deque_check_sorted(queue_nums))
         {
