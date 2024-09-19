@@ -28,10 +28,16 @@ class Test
 
 int main()
 {
-    vector<int> v;
+   /* vector<int> v;
     int n1 = 20;
     v.push_back(n1);
     cout<< &n1<<' '<<&v[0]<<'\n';
     Test t(&n1);
-    t.print();
+    t.print();*/
+
+
+    int n = -121;
+    string s;
+    s = to_string(n);
+    cout<<s;
 }
