@@ -6,6 +6,14 @@ class Operation
     Operation(int* n1, char simbol, int* n2 ): n1_(n1), n2_(n2), simbol_(simbol)
     {
     }
+    void acessor_n1(int* n1_new)
+    {
+        n1_ = n1_new;
+    }
+    void acessor_n2(int* n2_new)
+    {
+        n2_ = n2_new;
+    }
 
     private:
         char simbol_;
@@ -15,8 +23,18 @@ class Operation
 
 
 
+void recursive_func(string expression, vector<int>& v)
+{
+
+
+
+
+
+}
+
+
+
 vector<int> diffWaysToCompute(string expression) {
-        vector<int> nums;
         vector<Operation> v_op;
         int n1,n2;
         char simbol;
