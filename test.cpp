@@ -35,9 +35,14 @@ int main()
     Test t(&n1);
     t.print();*/
 
-
+    /*
     int n = -121;
     string s;
     s = to_string(n);
-    cout<<s;
+    cout<<s;*/
+    string s("1000");
+    string t("102");
+
+    bool b = (s<t);
+    cout<<b;
 }
