@@ -40,9 +40,9 @@ int main()
     string s;
     s = to_string(n);
     cout<<s;*/
-    string s("1000");
+    /*string s("1000");
     string t("102");
 
     bool b = (s<t);
-    cout<<b;
+    cout<<b;*/
 }
