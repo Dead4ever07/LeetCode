@@ -22,6 +22,18 @@ int main()
         }
         sort(items.begin(), items.end());
         int sum_a= 0, sum_b= 0;
+        int u = items.size()-1;
+        while(u-1 >=0 && k!= 0)
+        {
+            if(items[u]>items[u-1])
+            {
+                int l = items[u-1];
+                items[u-1] = items[u]-items[u-1]>k ? items[u-1] + k: items[u];
+                k -= (items[u-1]-l);
+            }
+            u -= 2;
+        }
+        
         for(int c = 0; c<n;c++)
         {
             if(c%2==0)
@@ -32,8 +44,7 @@ int main()
                 sum_b += items[items.size()-c-1];
             }
         }
-        if(sum_a-sum_b <=k){cout<<0<<'\n';}
-        else{cout<<sum_a-sum_b-k<<'\n';}
+        cout<<sum_a-sum_b<<'\n';
     }
     return 0;
 }
