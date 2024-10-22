@@ -14,7 +14,7 @@ class Operation
     {
         n2_ = n2_new;
     }
-
+//aaa
     private:
         char simbol_;
         int* n1_;
